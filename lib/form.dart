@@ -245,13 +245,14 @@ class _MyFormPageState extends State<MyFormPage> {
                                                         padding: const EdgeInsets.only(top: 20, bottom: 20),
                                                         shrinkWrap: true,
                                                         children: <Widget>[
-                                                        Center(child: const Text('Informasi Data')),
+                                                            Center(child: const Text('Informasi Data')),
                                                             SizedBox(height: 20),
                                                             // TODO: Display the information obtained from the form
                                                             Center(child: Text('Full Name: ' + _fullName)),
                                                             Center(child: Text(degree())),
                                                             Center(child: Text('Age: ' + '$age')),
                                                             Center(child: Text('PBD Class: ' + pdbClass)),
+                                                            SizedBox(height: 20),
                                                             TextButton(
                                                                 onPressed: () {
                                                                 Navigator.pop(context);
