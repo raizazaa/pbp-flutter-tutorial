@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flututor/form.dart';
+import 'package:flututor/page/form.dart';
+import 'package:flututor/page/to_do_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -100,6 +101,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     MaterialPageRoute(builder: (context) => const MyFormPage()),
                   );
                 },
+              ),
+              ListTile(
+                  title: const Text('To Do'),
+                  onTap: () {
+                      // Route the menu to the to do page
+                      Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => const ToDoPage()),
+                      );
+                  },
               ),
             ],
           ),
